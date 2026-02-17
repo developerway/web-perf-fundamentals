@@ -31,7 +31,7 @@ app.get("/assets/*", async (c) => {
 app.get("/*", async (c) => {
   const html = fs.readFileSync(path.join(dist, "index.html")).toString();
 
-  // return c.html(preRenderApp(html, c.req.path));
+  // return c.html(await preRenderApp(html, c.req.path));
 
   return c.html(html);
 });
