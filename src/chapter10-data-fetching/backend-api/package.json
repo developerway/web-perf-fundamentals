@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "tsx watch index.ts"
+    "start": "tsx watch --ignore ../../../node_modules/.vite-temp index.ts"
   }
 }

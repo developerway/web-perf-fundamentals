@@ -7,6 +7,6 @@
     "dev": "vite",
     "build": "rimraf dist && vite build",
     "build:ssg": "rimraf dist && vite build && tsx server/generate-static-pages.ts",
-    "start": "tsx watch server/index.ts"
+    "start": "tsx watch --ignore ../../../node_modules/.vite-temp server/index.ts"
   }
 }

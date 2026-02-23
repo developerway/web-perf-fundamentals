@@ -6,6 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "rimraf dist && vite build",
-    "start": "tsx watch server.ts"
+    "start": "tsx watch --ignore ../../../node_modules/.vite-temp server.ts"
   }
 }
